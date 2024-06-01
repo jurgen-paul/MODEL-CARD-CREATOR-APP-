@@ -1,0 +1,52 @@
+git@github.com:jurgen-paul/MODEL-CARD-CREATOR-APP-.git
+---
+language: 
+  - "List of ISO 639-1 code for your language"
+  - lang1
+  - lang2
+thumbnail: "url to a thumbnail used in social sharing"
+tags:
+- tag1
+- tag2
+license: "any valid license identifier"
+datasets:
+- dataset1
+- dataset2
+metrics:
+- metric1
+- metric2
+base_model: "base model Hub identifier"
+---
+library_name: flair
+tags:
+- flair
+base_model: HuggingFaceH4/zephyr-7b-beta
+base_model:
+- Endevor/InfinityRP-v1-7B
+- l3utterfly/mistral-7b-v0.1-layla-v4
+datasets:
+- imdb
+- HuggingFaceH4/no_robots
+# Example from https://huggingface.co/coqui/XTTS-v1
+---
+license: other
+license_name: coqui-public-model-license
+license_link: https://coqui.ai/cpml
+---
+---
+model-index:
+  - name: Yi-34B
+    results:
+      - task:
+          type: text-generation
+        dataset:
+          name: ai2_arc
+          type: ai2_arc
+        metrics:
+          - name: AI2 Reasoning Challenge (25-Shot)
+            type: AI2 Reasoning Challenge (25-Shot)
+            value: 64.59
+        source:
+          name: Open LLM Leaderboard
+          url: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
+---
